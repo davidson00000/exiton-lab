@@ -18,7 +18,18 @@ export const enTranslations = {
     sections: {
         about: {
             title: "What is EXITON Lab?",
-            content: `Same as intro.`
+            content: `
+      <p>EXITON Lab is a small, experimental AI research unit with a mission to <strong>"sit at the same table as AI and jointly design intelligent architectures."</strong></p>
+      <ul>
+        <li>Focus on <strong>Small / Local Language Models (SLMs)</strong> rather than massive cloud models.</li>
+        <li>Prioritize <strong>"How to Structure (Architecture)"</strong> over "Learning a lot".</li>
+        <li>Full use of <strong>AI as a co-researcher</strong> in every aspect of the research process.</li>
+        <li>Yet, the final responsibility and judgment lies with the <strong>human researcher</strong>.</li>
+      </ul>
+      <blockquote>
+        <p><strong>Structure > Scale</strong></p>
+      </blockquote>
+    `
         },
         research: {
             title: "Research Focus",
