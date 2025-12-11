@@ -1,10 +1,7 @@
-import fs from 'fs';
-import path from 'path';
 import matter from 'gray-matter';
 import { marked } from 'marked';
 import { enTranslations } from '$lib/data/en_translations';
-
-const CONTENT_PATH = path.join(process.cwd(), 'exiton_lab_site_content.md');
+import rawContent from '$lib/content/exiton_lab_site_content.md?raw';
 
 export interface Section {
   id: string;
@@ -61,11 +58,8 @@ function parseMarkdown(content: string): any {
 
 export function getSiteContent(lang: 'en' | 'jp' = 'jp'): SiteContent {
   // 1. Always parse the Source (JP) first to get structure
-  if (!fs.existsSync(CONTENT_PATH)) {
-    throw new Error(`Content file not found at ${CONTENT_PATH}`);
-  }
-  const fileContent = fs.readFileSync(CONTENT_PATH, 'utf-8');
-  const { data, content } = matter(fileContent);
+  // We use the imported rawContent string directly
+  const { data, content } = matter(rawContent);
   const parsedJP = parseMarkdown(content);
 
   // 2. If Lang is JP, return parsed source
