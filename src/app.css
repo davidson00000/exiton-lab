@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --color-neon-cyan: #23F3DB;
+  --color-deep-navy: #020b14;
+  --color-steel-gray: #c6c6c6;
+  --color-panel-bg: rgba(2, 11, 20, 0.85);
+  
+  --font-display: "IBM Plex Sans", "Inter", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  --animate-glitch: glitch 1s linear infinite;
+  --animate-float: float 6s ease-in-out infinite;
+}
+
+body {
+  background-color: var(--color-deep-navy);
+  color: var(--color-steel-gray);
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(35, 243, 219, 0.05) 0%, transparent 50%),
+    linear-gradient(rgba(35, 243, 219, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(35, 243, 219, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 4rem 4rem, 4rem 4rem;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4, h5, h6 {
+  color: white;
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+a {
+  color: var(--color-neon-cyan);
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 8px var(--color-neon-cyan);
+}
+
+/* Utilities */
+.neon-text {
+  color: var(--color-neon-cyan);
+  text-shadow: 0 0 10px rgba(35, 243, 219, 0.5);
+}
+
+.neon-border-bottom {
+  border-bottom: 1px solid var(--color-neon-cyan);
+  box-shadow: 0 4px 20px -5px rgba(35, 243, 219, 0.3);
+}
+
+.glass-panel {
+  background: var(--color-panel-bg);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
