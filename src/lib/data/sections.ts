@@ -120,8 +120,8 @@ export const principlesContent = {
                 image: "/images/principle_structure.png",
                 content: [
                     "**Main Statement**: Intelligent behavior emerges not just from parameter count, but from the architecture of interaction. A well-structured mesh of small models can outperform a single giant monolith.",
-                    "**Why it matters**: Monolithic models are opaque, expensive, and prone to hallucination. Structured systems (X-Mesh) are transparent, debuggable, and efficient.",
-                    "**Implementation**: In ContextOS, we treat models as modular CPUs. X-Mesh orchestrates small specialized agents (Planner, Worker, Reviewer) to achieve frontier-class reasoning with a fraction of the compute."
+                    "**Why it matters**: <br/>• Monolithic models are opaque, expensive, and prone to hallucination.<br/>• Structured systems (such as X-Mesh) are transparent, debuggable, and efficient.<br/>• By distributing roles (Planner / Worker / Reviewer / Consensus / Memory), structured AI achieves frontier-class reasoning with far less compute.",
+                    "**Implementation**: In ContextOS, we treat models as modular CPUs.<br/>X-Mesh orchestrates small specialized agents (Planner, Worker, Reviewer) to achieve frontier-class reasoning through cooperative multi-agent architecture."
                 ]
             },
             {
@@ -129,9 +129,9 @@ export const principlesContent = {
                 heading: "Principle 2 — Human–AI Co-Research",
                 image: "/images/principle_co_research.png",
                 content: [
-                    "**Main Statement**: AI should not be an 'automation tool' that replaces humans, but a 'research partner' that expands human cognition.",
-                    "**Why it matters**: Full automation often leads to loss of control and understanding. Co-research keeps the human in the loop for high-level direction and value judgment.",
-                    "**Implementation**: EXITON AGI is built on a dual-loop system: the AI runs experiment cycles, but constantly feeds insights back to the human for reflection and course correction."
+                    "**Main Statement**: AI should not be an automation tool that replaces humans, but a research partner that expands human cognition.",
+                    "**Why it matters**: <br/>• Full automation often leads to loss of control and understanding.<br/>• Co-research keeps the human in the loop for high-level direction and value judgment.",
+                    "**Implementation**: EXITON AGI operates with a dual-loop design:<br/>The AI runs rapid experiment cycles, constantly feeding insights back to the human researcher for reflection and course correction."
                 ]
             },
             {
@@ -140,8 +140,8 @@ export const principlesContent = {
                 image: "/images/principle_local.png",
                 content: [
                     "**Main Statement**: Frontier-class intelligence should not be the monopoly of cloud giants. It must run locally, under the user's control.",
-                    "**Why it matters**: Privacy, autonomy, and democratization. Researchers must own their tools and data without dependency on external APIs.",
-                    "**Implementation**: Our architecture (ContextOS + X-Mesh) is optimized for consumer hardware, enabling powerful AGI agents to run entirely on your local machine."
+                    "**Why it matters**: <br/>• Privacy, autonomy, and democratization.<br/>• Researchers must own their tools and data without dependency on external APIs.",
+                    "**Implementation**: Our architecture (ContextOS × X-Mesh) is optimized for consumer hardware, enabling powerful AGI agents to run entirely on local machines."
                 ]
             }
         ]
