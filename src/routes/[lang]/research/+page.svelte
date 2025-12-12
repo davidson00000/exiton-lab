@@ -13,8 +13,6 @@
 <section
     class="max-w-4xl mx-auto px-6 py-16 md:py-24 space-y-16 animate-fade-in relative z-10"
 >
-    </div>
-
     <!-- Doctrines -->
     {#if content.doctrines}
         <div class="mb-24 space-y-12">
@@ -23,7 +21,7 @@
             >
                 {content.doctrines.title}
             </h1>
-            
+
             <div class="grid gap-8">
                 {#each content.doctrines.items as item}
                     <article
@@ -43,8 +41,12 @@
                 {/each}
             </div>
 
-            <div class="bg-neon-cyan/5 border-l-4 border-neon-cyan p-6 rounded-r-lg">
-                <p class="text-white text-lg font-light italic whitespace-pre-line">
+            <div
+                class="bg-neon-cyan/5 border-l-4 border-neon-cyan p-6 rounded-r-lg"
+            >
+                <p
+                    class="text-white text-lg font-light italic whitespace-pre-line"
+                >
                     {content.doctrines.summary}
                 </p>
             </div>

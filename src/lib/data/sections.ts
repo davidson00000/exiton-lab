@@ -1,6 +1,24 @@
 export const researchContent = {
     en: {
         title: "Research Focus",
+        doctrines: {
+            title: "EXITON 3 Doctrines",
+            items: [
+                {
+                    heading: "Doctrine 1 — Structure Over Scale",
+                    body: "Intelligence emerges from structure, not size.\nEXITON challenges the belief that \"bigger models = smarter models.\"\nWe design systems where multiple small models cooperate through structured roles to outperform monolithic Frontier models in reasoning stability, transparency, and efficiency."
+                },
+                {
+                    heading: "Doctrine 2 — Human-Led Intelligence",
+                    body: "AI should extend human cognition, not replace it.\nEXITON AGI is built on a dual-loop architecture where humans provide direction and values, while AI performs rapid experiment cycles.\nHuman–AI co-research ensures safe, interpretable, and meaningful intelligence."
+                },
+                {
+                    heading: "Doctrine 3 — Local-First AGI",
+                    body: "Intelligence must be owned, not rented.\nFrontier-class reasoning should run on local hardware under the user’s control.\nEXITON builds a decentralized, privacy-preserving, and autonomous AGI architecture optimized for consumer GPUs."
+                }
+            ],
+            summary: "These doctrines define the foundation of EXITON Lab.\nWe build intelligence that is structured, human-guided, and locally owned."
+        },
         sections: [
             {
                 id: "reliability",
@@ -24,6 +42,24 @@ export const researchContent = {
     },
     jp: {
         title: "Research Focus",
+        doctrines: {
+            title: "EXITON 3 Doctrines（EXITON 三原則）",
+            items: [
+                {
+                    heading: "Doctrine 1 — Structure Over Scale",
+                    body: "知能はパラメータ数ではなく構造から生まれる。\nEXITON は「大きいモデルほど賢い」というドグマを否定し、\n複数の小型モデルを協調させる構造的アーキテクチャによって\nフロンティアモデルを超える推論安定性・透明性・効率性を目指す。"
+                },
+                {
+                    heading: "Doctrine 2 — Human-Led Intelligence",
+                    body: "AI は人間を置き換えるのではなく、人間の思考を拡張する外部器官である。\nEXITON AGI は人間が方向性と価値判断を行い、AI が高速な実験サイクルを回す\nデュアルループ構造によって、安全で解釈可能な共同研究を実現する。"
+                },
+                {
+                    heading: "Doctrine 3 — Local-First AGI",
+                    body: "知能は「借り物」ではなく「所有物」であるべきだ。\nフロンティア級推論はユーザー自身のマシン上で動作し、\nプライバシー、自律性、長期運用性、知能の民主化を保証する。"
+                }
+            ],
+            summary: "これらのドクトリンは EXITON Lab の基盤であり、\n構造化され、人間が舵取りし、ユーザーが所有できる知能の実現を目指す。"
+        },
         sections: [
             {
                 id: "reliability",
