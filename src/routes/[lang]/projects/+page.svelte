@@ -29,7 +29,11 @@
             {#if section.slug}
                 <a
                     href={`/${lang}/projects/${section.slug}`}
-                    class="block group relative overflow-hidden bg-deep-navy/60 backdrop-blur-md border border-neon-cyan/10 p-8 rounded-xl hover:border-neon-cyan/40 transition-all duration-500 hover:shadow-[0_0_30px_-5px_var(--color-neon-cyan-20)]"
+                    class={`block group relative overflow-hidden backdrop-blur-md border p-8 rounded-xl transition-all duration-500 hover:shadow-[0_0_30px_-5px_var(--color-neon-cyan-20)] ${
+                        section.id === "exiton-agi"
+                            ? "bg-deep-navy/80 border-neon-purple/30 hover:border-neon-purple/60 hover:shadow-[0_0_40px_-5px_rgba(192,132,252,0.3)]"
+                            : "bg-deep-navy/60 border-neon-cyan/10 hover:border-neon-cyan/40"
+                    }`}
                 >
                     <div
                         class="absolute -right-10 -top-10 w-32 h-32 bg-neon-cyan/10 rounded-full blur-3xl group-hover:bg-neon-cyan/20 transition-all duration-500"

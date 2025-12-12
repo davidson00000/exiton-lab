@@ -68,6 +68,12 @@ export const projectsContent = {
                 slug: "x-mesh",
                 heading: "X-Mesh (Frontier-Class Reasoning Engine)",
                 body: "A cooperative reasoning engine built from multiple small LLMs. Designed to rival GPT-5.1/Gemini-class Frontier Models through 'Structure beats Parameter' architecture, employing Planner-Worker-Reviewer methodology."
+            },
+            {
+                id: "exiton-agi",
+                slug: "exiton-agi",
+                heading: "[FINAL PROJECT] EXITON AGI (Self-Motivated General Intelligence)",
+                body: "A long-term research project aiming to build a self-motivated AGI that can discover problems, plan experiments, and improve itself using the EXITON architecture: ContextOS, LogicShield, and X-Mesh."
             }
         ]
     },
@@ -91,6 +97,12 @@ export const projectsContent = {
                 slug: "x-mesh",
                 heading: "X-Mesh (Frontier-Class Reasoning Engine)",
                 body: "小型LLMを複数協調させることで、GPT-5.1/Gemini級の推論性能を「構造」で実現する次世代推論エンジン。Planner-Worker-Reviewerの合議制を採用し、パラメータ数に頼らない知能の拡張を目指します。"
+            },
+            {
+                id: "exiton-agi",
+                slug: "exiton-agi",
+                heading: "[FINAL PROJECT] EXITON AGI (Self-Motivated General Intelligence)",
+                body: "ContextOS・LogicShield・X-Mesh から成る EXITON アーキテクチャの上に、自ら課題を発見し、実験計画を立て、自己改善できる『自己目的的汎用知能（AGI）』を構築する長期プロジェクトです。"
             }
         ]
     }
