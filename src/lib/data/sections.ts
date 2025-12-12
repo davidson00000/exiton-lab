@@ -148,17 +148,17 @@ export const principlesContent = {
     },
     jp: {
         title: "Research Principles",
-        intro: "EXITON Lab の原則は、AIシステムがあるべき姿を示しています。それは、構造化され、信頼性が高く、人間中心であり、ローカルファーストであることです。私たちは「巨大であればあるほど良い」というドグマを否定し、透明で検証可能、かつ人間の思考と協調するアーキテクチャを追求します。",
-        closing: "EXITON AGI は単なるシステム設計ではありません。「知能はどのように構築されるべきか」という哲学そのものです。透明で、モジュール式で、信頼性が高く、そして人間に導かれる知能です。",
+        intro: "EXITON Lab の Research Principles は、「巨大モデル依存ではない AI の作り方」を示す指針です。構造化・人間との協働・ローカル実行を軸に、透明で検証可能な知能アーキテクチャを追求します。",
+        closing: "「EXITON AGI は単なるシステム設計ではありません。知能をどのように作るべきか――透明で、モジュラーで、信頼でき、人間が舵取りする存在であるべきだという哲学そのものです。」",
         sections: [
             {
                 id: "structure-beats-scale",
                 heading: "Principle 1 — Structure Beats Scale",
                 image: "/images/principle_structure.png",
                 content: [
-                    "**Main Statement**: 知的振る舞いはパラメータ数だけでなく「相互作用の構造」から創発します。適切に構造化された小型モデルのメッシュは、単一の巨大なモノリスを凌駕します。",
-                    "**Why it matters**: モノリシックなモデルは不透明で高コストであり、ハルシネーションを起こしやすい傾向があります。構造化されたシステム（X-Mesh）は透明でデバッグ可能かつ効率的です。",
-                    "**Implementation**: ContextOS ではモデルをモジュール式のCPUとして扱います。X-Mesh は、Planner、Worker、Reviewer といった専門エージェントを指揮し、わずかな計算リソースで Frontier クラスの推論を実現します。"
+                    "**Main Statement**: 知的なふるまいはパラメータ数だけでなく、相互作用のアーキテクチャから生まれます。役割が整理された複数の小さなモデルのメッシュは、単一の巨大モデルを上回ることができます。",
+                    "**Why it matters**: <br/>• モノリシックな巨大モデルは、不透明・高コストで、幻覚を起こしやすいという問題を抱えています。<br/>• 一方で、X-Mesh のような構造化されたシステムは、透明性が高く、デバッグしやすく、効率的です。<br/>• Planner / Worker / Reviewer / Consensus / Memory などの役割を分散することで、構造化 AI は、はるかに少ない計算資源でフロンティア級の推論を実現できます。",
+                    "**Implementation**: ContextOS では、モデルをモジュラーな CPU のように扱います。<br/>X-Mesh は、Planner / Worker / Reviewer などの小さな専門エージェントをオーケストレーションし、協調型マルチエージェント構造によってフロンティア級の推論を実現します。"
                 ]
             },
             {
@@ -166,9 +166,9 @@ export const principlesContent = {
                 heading: "Principle 2 — Human–AI Co-Research",
                 image: "/images/principle_co_research.png",
                 content: [
-                    "**Main Statement**: AI は人間を置き換える「自動化ツール」ではなく、人間の認知を拡張する「研究パートナー」であるべきです。",
-                    "**Why it matters**: 完全自動化はしばしば制御と理解の喪失を招きます。Co-Research（共同研究）は、高レベルの方向付けと価値判断のために人間をループ内に留めます。",
-                    "**Implementation**: EXITON AGI は二重ループシステムに基づいています。AI は実験サイクルを回しますが、洞察を絶えず人間にフィードバックし、省察と軌道修正を促します。"
+                    "**Main Statement**: AI は人間を置き換える自動化ツールではなく、人間の認知を拡張する「研究パートナー」であるべきです。",
+                    "**Why it matters**: <br/>• フル自動化は、方向性の喪失や理解不能な振る舞いを生みやすく、制御を失うリスクがあります。<br/>• Human–AI Co-Research では、人間が高いレベルの方向付けと価値判断を担い続けることで、研究と応用の両方を安全で意味のあるものに保ちます。",
+                    "**Implementation**: EXITON AGI は、デュアルループ構造で動作します。<br/>• AI は高速な実験サイクル（分析 → 仮説生成 → 実験 → 反省）を回し、その結果を常に人間研究者にフィードバックします。<br/>• 人間はその結果を評価し、次の方向性や制約条件を設定します。"
                 ]
             },
             {
@@ -176,9 +176,9 @@ export const principlesContent = {
                 heading: "Principle 3 — Local Intelligence",
                 image: "/images/principle_local.png",
                 content: [
-                    "**Main Statement**: Frontier クラスの知能は、クラウドの巨大企業による独占物であってはなりません。それはローカルで、ユーザーの管理下で動作すべきです。",
-                    "**Why it matters**: プライバシー、自律性、そして民主化のためです。研究者は外部APIに依存せず、自身のツールとデータを所有しなければなりません。",
-                    "**Implementation**: 私たちのアーキテクチャ（ContextOS + X-Mesh）は民生用ハードウェア向けに最適化されており、強力な AGI エージェントをローカルマシン上で完全に動作させることを可能にします。"
+                    "**Main Statement**: フロンティア級の知能は、クラウド事業者だけの独占物であってはなりません。ユーザーの手元のマシンで動き、ユーザー自身のコントロール下にあるべきです。",
+                    "**Why it matters**: <br/>• プライバシー・自律性・民主化の観点から、研究者や開発者は外部 API に依存せず、自分のツールとデータを自分で所有できる必要があります。<br/>• ローカル環境で動く構造化 AI は、そのための現実的な選択肢です。",
+                    "**Implementation**: EXITON のアーキテクチャ（ContextOS × X-Mesh）は、コンシューマ向けハードウェアでの実行を前提として設計されています。<br/>12〜24GB クラスの GPU を搭載した一般的な PC 上で、強力な AGI エージェントが完全ローカルで動作することを目標としています。"
                 ]
             }
         ]
