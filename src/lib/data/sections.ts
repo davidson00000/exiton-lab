@@ -53,13 +53,21 @@ export const projectsContent = {
         sections: [
             {
                 id: "logic-validator",
+                slug: "logic-validator",
                 heading: "Logic Validator (Under Preparation)",
                 body: "A research project aimed at increasing inference consistency and safety by passing LLM/SLM outputs through a 'logic inspection line'. We are combining rule-based/LLM-based validators and using Fault Injection to evaluate robustness. Targeting ICLR 2026."
             },
             {
                 id: "context-os",
+                slug: "context-os",
                 heading: "ContextOS (Under Preparation)",
                 body: "A project reinterpreting LLMs/SLMs not as embedded AI but as an 'OS-like layer handling intelligence'. We focus on deterministic state management, module control structures (Manager-Worker), and stable Agent/Tool system design."
+            },
+            {
+                id: "x-mesh",
+                slug: "x-mesh",
+                heading: "X-Mesh (Frontier-Class Reasoning Engine)",
+                body: "A cooperative reasoning engine built from multiple small LLMs. Designed to rival GPT-5.1/Gemini-class Frontier Models through 'Structure beats Parameter' architecture, employing Planner-Worker-Reviewer methodology."
             }
         ]
     },
@@ -68,13 +76,21 @@ export const projectsContent = {
         sections: [
             {
                 id: "logic-validator",
+                slug: "logic-validator",
                 heading: "Logic Validator (Under Preparation)",
                 body: "LLM/SLM の出力に対して「論理の検品ライン」を通すことで、推論の一貫性と安全性を高めることを目指した研究プロジェクトです。論理検証・Validator の組み合わせや Fault Injection による評価を行い、ICLR 2026 への投稿を目指しています。"
             },
             {
                 id: "context-os",
+                slug: "context-os",
                 heading: "ContextOS (Under Preparation)",
                 body: "LLM/SLM を「アプリの中に埋め込む AI」ではなく、「知能を支えるOS的レイヤ」として再解釈するプロジェクトです。タスク状態の決定論的な管理や、Manager-Worker による制御構造、小規模モデルでも安定するシステム設計を研究しています。"
+            },
+            {
+                id: "x-mesh",
+                slug: "x-mesh",
+                heading: "X-Mesh (Frontier-Class Reasoning Engine)",
+                body: "小型LLMを複数協調させることで、GPT-5.1/Gemini級の推論性能を「構造」で実現する次世代推論エンジン。Planner-Worker-Reviewerの合議制を採用し、パラメータ数に頼らない知能の拡張を目指します。"
             }
         ]
     }

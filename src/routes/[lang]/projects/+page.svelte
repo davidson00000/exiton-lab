@@ -26,31 +26,64 @@
 
     <div class="grid gap-8">
         {#each content.sections as section}
-            <article
-                class="group relative overflow-hidden bg-deep-navy/60 backdrop-blur-md border border-neon-cyan/10 p-8 rounded-xl hover:border-neon-cyan/40 transition-all duration-500"
-            >
-                <div
-                    class="absolute -right-10 -top-10 w-32 h-32 bg-neon-cyan/10 rounded-full blur-3xl group-hover:bg-neon-cyan/20 transition-all duration-500"
-                ></div>
-
-                <div class="relative z-10">
+            {#if section.slug}
+                <a
+                    href={`/${lang}/projects/${section.slug}`}
+                    class="block group relative overflow-hidden bg-deep-navy/60 backdrop-blur-md border border-neon-cyan/10 p-8 rounded-xl hover:border-neon-cyan/40 transition-all duration-500 hover:shadow-[0_0_30px_-5px_var(--color-neon-cyan-20)]"
+                >
                     <div
-                        class="text-xs font-mono text-neon-cyan/70 mb-2 tracking-widest uppercase"
-                    >
-                        Project_ID: {section.id}
+                        class="absolute -right-10 -top-10 w-32 h-32 bg-neon-cyan/10 rounded-full blur-3xl group-hover:bg-neon-cyan/20 transition-all duration-500"
+                    ></div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="text-xs font-mono text-neon-cyan/70 mb-2 tracking-widest uppercase flex justify-between items-center"
+                        >
+                            <span>Project_ID: {section.id}</span>
+                            <span
+                                class="text-neon-cyan opacity-0 group-hover:opacity-100 transition-opacity"
+                                >→ VIEW_DATA</span
+                            >
+                        </div>
+                        <h2
+                            class="text-2xl md:text-3xl font-display font-bold text-white mb-4 group-hover:text-neon-cyan transition-colors"
+                        >
+                            {section.heading}
+                        </h2>
+                        <p
+                            class="text-base md:text-lg leading-relaxed text-zinc-400 font-light"
+                        >
+                            {section.body}
+                        </p>
                     </div>
-                    <h2
-                        class="text-2xl md:text-3xl font-display font-bold text-white mb-4"
-                    >
-                        {section.heading}
-                    </h2>
-                    <p
-                        class="text-base md:text-lg leading-relaxed text-zinc-400 font-light"
-                    >
-                        {section.body}
-                    </p>
-                </div>
-            </article>
+                </a>
+            {:else}
+                <article
+                    class="group relative overflow-hidden bg-deep-navy/60 backdrop-blur-md border border-neon-cyan/10 p-8 rounded-xl hover:border-neon-cyan/40 transition-all duration-500"
+                >
+                    <div
+                        class="absolute -right-10 -top-10 w-32 h-32 bg-neon-cyan/10 rounded-full blur-3xl group-hover:bg-neon-cyan/20 transition-all duration-500"
+                    ></div>
+
+                    <div class="relative z-10">
+                        <div
+                            class="text-xs font-mono text-neon-cyan/70 mb-2 tracking-widest uppercase"
+                        >
+                            Project_ID: {section.id}
+                        </div>
+                        <h2
+                            class="text-2xl md:text-3xl font-display font-bold text-white mb-4"
+                        >
+                            {section.heading}
+                        </h2>
+                        <p
+                            class="text-base md:text-lg leading-relaxed text-zinc-400 font-light"
+                        >
+                            {section.body}
+                        </p>
+                    </div>
+                </article>
+            {/if}
         {/each}
     </div>
 </section>
