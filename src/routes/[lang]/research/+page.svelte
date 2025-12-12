@@ -34,10 +34,17 @@
                 ></div>
 
                 <h2
-                    class="text-xl md:text-2xl font-display font-semibold text-neon-cyan mb-4 tracking-tight"
+                    class="text-xl md:text-2xl font-display font-semibold text-neon-cyan mb-2 tracking-tight"
                 >
                     {section.heading}
                 </h2>
+                {#if section.subtitle}
+                    <p
+                        class="text-xs md:text-sm text-neon-cyan/80 mb-4 font-mono tracking-wide"
+                    >
+                        {section.subtitle}
+                    </p>
+                {/if}
                 <p
                     class="text-sm md:text-base leading-relaxed text-zinc-300 font-light"
                 >

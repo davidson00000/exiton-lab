@@ -4,23 +4,21 @@ export const researchContent = {
         sections: [
             {
                 id: "reliability",
-                heading: "Reliability & Validation of AI Systems",
-                body: "Instead of hoping LLMs are 'accidentally' correct, how can we make them structurally unbreakable? We research logic validation layers (Validator / Critic / Rule Engine) to detect and suppress hallucination. We aim to enhance reliability by strengthening the 'verification architecture' rather than just making models larger."
+                heading: "Logic Validation & Reliability",
+                subtitle: "Strengthening AI reasoning through validation layers (LogicShield Theory)",
+                body: "Instead of relying on 'accidental correctness' of LLMs, we build structural reliability. We use Validator, Critic, and Rule Engine layers to detect hallucinations and enforce logic. We aim to enhance reliability by strengthening the 'Verification Architecture' rather than just making models larger."
             },
             {
                 id: "cognitive-os",
                 heading: "Cognitive Operating Systems",
-                body: "Exploring architectures that treat LLMs not as a 'one-shot answer machine' but as a component like a CPU within an OS. We investigate how to manage task state, where to draw the line between stateless CPU and decision maker, and how to orchestrate Tool-Calling and memory."
+                subtitle: "Treating LLMs as CPUs inside an OS (ContextOS Theory)",
+                body: "We reinterpret LLMs not as the whole system, but as a CPU component within a larger 'Cognitive OS'. This research focuses on deterministic task management, memory hierarchy (SynapseVault), and robust Agent/Tool orchestration."
             },
             {
-                id: "architecture-driven",
-                heading: "Architecture-Driven Intelligence",
-                body: "We believe 'Intelligence stability is determined by architecture, not parameter count.' We explore module decomposition to solve large problems with small models, defining where engineering should take over from learning."
-            },
-            {
-                id: "human-ai-coresearch",
-                heading: "Human–AI Co-Research",
-                body: "Redesigning the research process itself as 'Human × AI Collaboration'. From brainstorming to coding and paper writing, we work with AI as a partner, while retaining human responsibility for final judgment."
+                id: "cooperative-intelligence",
+                heading: "Cooperative Intelligence Architecture",
+                subtitle: "Multi-SLM reasoning structure (SynapseMesh Theory)",
+                body: "A specialized architecture where Planner, Worker, Reviewer, and other SLMs collaborate. We prove that a stable multi-stage reasoning structure ('Structure beats Parameter') can outperform single giant models."
             }
         ]
     },
@@ -29,23 +27,21 @@ export const researchContent = {
         sections: [
             {
                 id: "reliability",
-                heading: "Reliability & Validation of AI Systems",
-                body: "LLM/SLM の出力が「たまたま」正しいのではなく、構造的に壊れにくくするにはどうすればよいか？検証レイヤー（Validator / Critic / Rule Engine）を用いて hallucination を検知・抑制し、モデルサイズではなく“検証アーキテクチャ”の強化によって信頼性を向上させる研究を行っています。"
+                heading: "Logic Validation & Reliability",
+                subtitle: "Strengthening AI reasoning through validation layers (LogicShield Theory)",
+                body: "LLMの出力が「たまたま」正しい状態に頼るのではなく、構造的な信頼性を構築します。Validator、Critic、Rule Engine層を用いてハルシネーションを検知し、論理を強制します。モデル規模よりも「検証アーキテクチャ」を重視します。"
             },
             {
                 id: "cognitive-os",
                 heading: "Cognitive Operating Systems",
-                body: "LLM を「一発回答マシン」としてではなく、OS の中に載せる CPU のようなコンポーネントとして扱うためのアーキテクチャを探究しています。タスク状態の管理、stateless CPU と意思決定器の境界、Tool-Calling やメモリの OS 的配置を実験しています。"
+                subtitle: "Treating LLMs as CPUs inside an OS (ContextOS Theory)",
+                body: "LLMをシステム全体と捉えるのではなく、より大きな「Cognitive OS」内のCPUコンポーネントとして再解釈します。決定論的なタスク管理、メモリ階層（SynapseVault）、そして堅牢なAgent/Toolオーケストレーションに焦点を当てています。"
             },
             {
-                id: "architecture-driven",
-                heading: "Architecture-Driven Intelligence",
-                body: "「知能の安定性は、パラメータ数よりアーキテクチャで決まる」という仮説のもと、小さなモデルでも大きな問題を解くためのモジュール分解や、学習と設計（エンジニアリング）の適切な境界線を探究しています。"
-            },
-            {
-                id: "human-ai-coresearch",
-                heading: "Human–AI Co-Research",
-                body: "研究プロセスそのものを「人間 × AI の協働」として再設計しています。アイデア出しから実装、執筆に至るまで AI をパートナーとして活用しつつ、最終的な責任と判断は人間が負うという原則を実践しています。"
+                id: "cooperative-intelligence",
+                heading: "Cooperative Intelligence Architecture",
+                subtitle: "Multi-SLM reasoning structure (SynapseMesh Theory)",
+                body: "Planner、Worker、ReviewerなどのSLMが協調する特化型アーキテクチャです。安定した多段推論構造（Structure beats Parameter）が、単一の巨大モデルを凌駕することを実証します。"
             }
         ]
     }
@@ -89,6 +85,11 @@ export const principlesContent = {
         title: "Research Principles & AI Usage Policy",
         sections: [
             {
+                id: "human-ai-coresearch",
+                heading: "Human–AI Co-Research",
+                body: "Redesigning the research process itself as 'Human × AI Collaboration'. From brainstorming to coding and paper writing, we work with AI as a partner, while retaining human responsibility for final judgment."
+            },
+            {
                 id: "transparency",
                 heading: "Transparency",
                 body: "We record which AI models and uses are involved in every project. We openly disclose AI usage in papers (generating text, code, etc.)."
@@ -118,6 +119,11 @@ export const principlesContent = {
     jp: {
         title: "Research Principles & AI Usage Policy",
         sections: [
+            {
+                id: "human-ai-coresearch",
+                heading: "Human–AI Co-Research",
+                body: "研究プロセスそのものを「人間 × AI の協働」として再設計しています。アイデア出しから実装、執筆に至るまで AI をパートナーとして活用しつつ、最終的な責任と判断は人間が負うという原則を実践しています。"
+            },
             {
                 id: "transparency",
                 heading: "Transparency（透明性）",
