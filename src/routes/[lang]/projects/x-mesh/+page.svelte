@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     import { xMeshContent } from "$lib/data/x_mesh";
-    import Markdown from "$lib/utils/markdown";
+
     // Assuming we might have a markdown renderer or we just render text arrays.
     // For now, I will render text arrays simply.
 
