@@ -1,6 +1,9 @@
 <script lang="ts">
   import { page } from "$app/stores";
+  import { fade } from "svelte/transition";
   import LangSwitch from "./LangSwitch.svelte";
+
+  let isMenuOpen = false;
 
   let lang = $derived($page.params.lang || "en");
 
@@ -44,10 +47,50 @@
       <LangSwitch />
     </div>
 
-    <!-- Mobile Menu Button (Simple implementation) -->
-    <div class="md:hidden flex items-center gap-4">
-      <LangSwitch />
-      <!-- TODO: Add mobile menu toggle -->
-    </div>
+    <!-- Mobile Menu Button -->
+    <button
+      class="md:hidden relative z-50 p-2 text-neon-cyan focus:outline-none"
+      on:click={() => (isMenuOpen = !isMenuOpen)}
+      aria-label="Toggle Menu"
+    >
+      <div class="w-6 h-5 flex flex-col justify-between">
+        <span
+          class="block w-full h-0.5 bg-current transform transition-transform duration-300 {isMenuOpen
+            ? 'rotate-45 translate-y-2'
+            : ''}"
+        ></span>
+        <span
+          class="block w-full h-0.5 bg-current transition-opacity duration-300 {isMenuOpen
+            ? 'opacity-0'
+            : ''}"
+        ></span>
+        <span
+          class="block w-full h-0.5 bg-current transform transition-transform duration-300 {isMenuOpen
+            ? '-rotate-45 -translate-y-2.5'
+            : ''}"
+        ></span>
+      </div>
+    </button>
   </div>
 </nav>
+
+<!-- Mobile Menu Overlay -->
+{#if isMenuOpen}
+  <div
+    class="fixed inset-0 z-40 bg-deep-navy/95 backdrop-blur-xl flex flex-col items-center justify-center space-y-8 md:hidden"
+    transition:fade={{ duration: 200 }}
+  >
+    {#each links as link}
+      <a
+        href={link.href}
+        class="text-xl tracking-[0.2em] uppercase font-bold text-white hover:text-neon-cyan transition-colors"
+        on:click={() => (isMenuOpen = false)}
+      >
+        {link.label}
+      </a>
+    {/each}
+    <div class="mt-8 transform scale-125">
+      <LangSwitch />
+    </div>
+  </div>
+{/if}
