@@ -110,72 +110,76 @@ export const projectsContent = {
 
 export const principlesContent = {
     en: {
-        title: "Research Principles & AI Usage Policy",
+        title: "Research Principles",
+        intro: "EXITON Lab’s principles describe how we believe AI systems should be built: structured, reliable, human-centered, and local-first. We reject the 'bigger is better' dogma in favor of architectures that are transparent, verifiable, and collaboratively integrated with human reasoning.",
+        closing: "EXITON AGI is not just a system design. It is a philosophy of how intelligence should be built: transparent, modular, reliable, and human-guided.",
         sections: [
             {
+                id: "structure-beats-scale",
+                heading: "Principle 1 — Structure Beats Scale",
+                image: "/images/principle_structure.png",
+                content: [
+                    "**Main Statement**: Intelligent behavior emerges not just from parameter count, but from the architecture of interaction. A well-structured mesh of small models can outperform a single giant monolith.",
+                    "**Why it matters**: Monolithic models are opaque, expensive, and prone to hallucination. Structured systems (X-Mesh) are transparent, debuggable, and efficient.",
+                    "**Implementation**: In ContextOS, we treat models as modular CPUs. X-Mesh orchestrates small specialized agents (Planner, Worker, Reviewer) to achieve frontier-class reasoning with a fraction of the compute."
+                ]
+            },
+            {
                 id: "human-ai-coresearch",
-                heading: "Human–AI Co-Research",
-                body: "Redesigning the research process itself as 'Human × AI Collaboration'. From brainstorming to coding and paper writing, we work with AI as a partner, while retaining human responsibility for final judgment."
+                heading: "Principle 2 — Human–AI Co-Research",
+                image: "/images/principle_co_research.png",
+                content: [
+                    "**Main Statement**: AI should not be an 'automation tool' that replaces humans, but a 'research partner' that expands human cognition.",
+                    "**Why it matters**: Full automation often leads to loss of control and understanding. Co-research keeps the human in the loop for high-level direction and value judgment.",
+                    "**Implementation**: EXITON AGI is built on a dual-loop system: the AI runs experiment cycles, but constantly feeds insights back to the human for reflection and course correction."
+                ]
             },
             {
-                id: "transparency",
-                heading: "Transparency",
-                body: "We record which AI models and uses are involved in every project. We openly disclose AI usage in papers (generating text, code, etc.)."
-            },
-            {
-                id: "human-responsibility",
-                heading: "Human Responsibility",
-                body: "Even if AI generates ideas or code, the final responsibility for truth, validity, and ethics lies with human researchers. We do not claim 'AI said so' as justification."
-            },
-            {
-                id: "reproducibility",
-                heading: "Reproducibility",
-                body: "We record model versions and prompts to ensure reproducibility. We report results based on human-verifiable metrics, not just AI evaluation."
-            },
-            {
-                id: "privacy",
-                heading: "Privacy & Confidentiality",
-                body: "We do not send unpublished papers or confidential data to public LLMs. We use local LLMs or secure environments for sensitive data."
-            },
-            {
-                id: "ethical-partnership",
-                heading: "Ethical Partnership",
-                body: "We treat AI not as a magic box, but as a statistical tool with limits and biases. AI is a co-research partner, but legal and ethical agency remains with humans."
+                id: "local-intelligence",
+                heading: "Principle 3 — Local Intelligence",
+                image: "/images/principle_local.png",
+                content: [
+                    "**Main Statement**: Frontier-class intelligence should not be the monopoly of cloud giants. It must run locally, under the user's control.",
+                    "**Why it matters**: Privacy, autonomy, and democratization. Researchers must own their tools and data without dependency on external APIs.",
+                    "**Implementation**: Our architecture (ContextOS + X-Mesh) is optimized for consumer hardware, enabling powerful AGI agents to run entirely on your local machine."
+                ]
             }
         ]
     },
     jp: {
-        title: "Research Principles & AI Usage Policy",
+        title: "Research Principles",
+        intro: "EXITON Lab の原則は、AIシステムがあるべき姿を示しています。それは、構造化され、信頼性が高く、人間中心であり、ローカルファーストであることです。私たちは「巨大であればあるほど良い」というドグマを否定し、透明で検証可能、かつ人間の思考と協調するアーキテクチャを追求します。",
+        closing: "EXITON AGI は単なるシステム設計ではありません。「知能はどのように構築されるべきか」という哲学そのものです。透明で、モジュール式で、信頼性が高く、そして人間に導かれる知能です。",
         sections: [
             {
+                id: "structure-beats-scale",
+                heading: "Principle 1 — Structure Beats Scale",
+                image: "/images/principle_structure.png",
+                content: [
+                    "**Main Statement**: 知的振る舞いはパラメータ数だけでなく「相互作用の構造」から創発します。適切に構造化された小型モデルのメッシュは、単一の巨大なモノリスを凌駕します。",
+                    "**Why it matters**: モノリシックなモデルは不透明で高コストであり、ハルシネーションを起こしやすい傾向があります。構造化されたシステム（X-Mesh）は透明でデバッグ可能かつ効率的です。",
+                    "**Implementation**: ContextOS ではモデルをモジュール式のCPUとして扱います。X-Mesh は、Planner、Worker、Reviewer といった専門エージェントを指揮し、わずかな計算リソースで Frontier クラスの推論を実現します。"
+                ]
+            },
+            {
                 id: "human-ai-coresearch",
-                heading: "Human–AI Co-Research",
-                body: "研究プロセスそのものを「人間 × AI の協働」として再設計しています。アイデア出しから実装、執筆に至るまで AI をパートナーとして活用しつつ、最終的な責任と判断は人間が負うという原則を実践しています。"
+                heading: "Principle 2 — Human–AI Co-Research",
+                image: "/images/principle_co_research.png",
+                content: [
+                    "**Main Statement**: AI は人間を置き換える「自動化ツール」ではなく、人間の認知を拡張する「研究パートナー」であるべきです。",
+                    "**Why it matters**: 完全自動化はしばしば制御と理解の喪失を招きます。Co-Research（共同研究）は、高レベルの方向付けと価値判断のために人間をループ内に留めます。",
+                    "**Implementation**: EXITON AGI は二重ループシステムに基づいています。AI は実験サイクルを回しますが、洞察を絶えず人間にフィードバックし、省察と軌道修正を促します。"
+                ]
             },
             {
-                id: "transparency",
-                heading: "Transparency（透明性）",
-                body: "どのプロジェクトでどの AI をどう使ったかを記録します。論文等では AI Usage Disclosure を設け、利用範囲を明示します。"
-            },
-            {
-                id: "human-responsibility",
-                heading: "Human Responsibility（最終責任は人間）",
-                body: "AI が生成したものであっても、真偽・妥当性・倫理性の最終責任は人間が負います。「AI が言ったから」という主張は行いません。"
-            },
-            {
-                id: "reproducibility",
-                heading: "Reproducibility（再現性）",
-                body: "実験に AI を用いた場合も、モデル名や設定を記録し、追試可能な公開を目指します。人間が検証可能な指標を用いて報告します。"
-            },
-            {
-                id: "privacy",
-                heading: "Privacy & Confidentiality（守秘義務）",
-                body: "査読中の論文や機密資料を公開 LLM に送信しません。必要に応じてローカル LLM や安全な環境を利用します。"
-            },
-            {
-                id: "ethical-partnership",
-                heading: "Ethical Partnership（倫理的な人間–AI協働）",
-                body: "AI を魔法の箱ではなく、限界とバイアスを持つ統計的ツールとして扱います。共犯者ではなく共同研究パートナーですが、責任主体は人間です。"
+                id: "local-intelligence",
+                heading: "Principle 3 — Local Intelligence",
+                image: "/images/principle_local.png",
+                content: [
+                    "**Main Statement**: Frontier クラスの知能は、クラウドの巨大企業による独占物であってはなりません。それはローカルで、ユーザーの管理下で動作すべきです。",
+                    "**Why it matters**: プライバシー、自律性、そして民主化のためです。研究者は外部APIに依存せず、自身のツールとデータを所有しなければなりません。",
+                    "**Implementation**: 私たちのアーキテクチャ（ContextOS + X-Mesh）は民生用ハードウェア向けに最適化されており、強力な AGI エージェントをローカルマシン上で完全に動作させることを可能にします。"
+                ]
             }
         ]
     }
