@@ -52,11 +52,13 @@ export const xMeshContent = {
                 ]
             }
         ],
-        download: {
-            heading: "Get Involved",
-            text: "The X-Mesh source code will be made available on GitHub.",
-            linkText: "View on GitHub",
-            url: "https://github.com/davidson00000/exiton-lab"
+        status: {
+            heading: "Status & Get Involved",
+            text: "Current status: Early-stage conceptual and architectural research, not yet implemented as a full system.",
+            links: [
+                { text: "Follow Research Notes", url: "/en/notes" },
+                { text: "Contact for Collaboration", url: "/en/contact" }
+            ]
         }
     },
     jp: {
@@ -112,11 +114,13 @@ export const xMeshContent = {
                 ]
             }
         ],
-        download: {
-            heading: "Get Involved",
-            text: "X-Mesh のソースコードは GitHub にて公開予定です。",
-            linkText: "View on GitHub",
-            url: "https://github.com/davidson00000/exiton-lab"
+        status: {
+            heading: "Status & Get Involved",
+            text: "現在のステータス: 初期の概念・アーキテクチャ研究段階であり、完全なシステムとしては未実装です。",
+            links: [
+                { text: "Research Notes を読む", url: "/jp/notes" },
+                { text: "共同研究の問い合わせ", url: "/jp/contact" }
+            ]
         }
     }
 };

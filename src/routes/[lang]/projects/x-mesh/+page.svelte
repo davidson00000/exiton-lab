@@ -102,28 +102,27 @@
             {/each}
         </div>
 
-        <!-- Download / GitHub -->
-        <section class="text-center pt-8">
+        <!-- Status / Get Involved -->
+        <section class="text-center pt-8 pb-16">
             <div
-                class="bg-gradient-to-r from-deep-navy via-neon-cyan/10 to-deep-navy p-8 rounded-2xl border border-neon-cyan/20"
+                class="bg-gradient-to-r from-deep-navy via-neon-purple/10 to-deep-navy p-10 rounded-3xl border border-neon-purple/30 shadow-[0_0_50px_-20px_rgba(192,132,252,0.2)]"
             >
-                <h2 class="text-2xl font-bold text-white mb-4">
-                    {content.download.heading}
+                <h2 class="text-3xl font-bold text-white mb-4">
+                    {content.status.heading}
                 </h2>
-                <p class="text-zinc-400 mb-6">{content.download.text}</p>
-                <a
-                    href={content.download.url}
-                    target="_blank"
-                    rel="noreferrer"
-                    class="inline-flex items-center gap-2 px-8 py-3 bg-neon-cyan/10 hover:bg-neon-cyan/20 text-neon-cyan border border-neon-cyan rounded-full transition-all hover:scale-105 hover:shadow-[0_0_20px_-5px_#23F3DB]"
-                >
-                    <img
-                        src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                        class="w-5 h-5 invert"
-                        alt="GitHub"
-                    />
-                    {content.download.linkText}
-                </a>
+                <p class="text-zinc-300 mb-8 max-w-2xl mx-auto">
+                    {content.status.text}
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    {#each content.status.links as link}
+                        <a
+                            href={link.url}
+                            class="px-8 py-3 bg-white/5 hover:bg-neon-purple/20 text-white border border-white/10 hover:border-neon-purple rounded-full transition-all hover:scale-105"
+                        >
+                            {link.text}
+                        </a>
+                    {/each}
+                </div>
             </div>
         </section>
     </main>
