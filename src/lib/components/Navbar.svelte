@@ -3,7 +3,7 @@
   import { fade } from "svelte/transition";
   import LangSwitch from "./LangSwitch.svelte";
 
-  let isMenuOpen = false;
+  let isMenuOpen = $state(false);
 
   let lang = $derived($page.params.lang || "en");
 
@@ -50,7 +50,7 @@
     <!-- Mobile Menu Button -->
     <button
       class="md:hidden relative z-50 p-2 text-neon-cyan focus:outline-none"
-      on:click={() => (isMenuOpen = !isMenuOpen)}
+      onclick={() => (isMenuOpen = !isMenuOpen)}
       aria-label="Toggle Menu"
     >
       <div class="w-6 h-5 flex flex-col justify-between">
@@ -84,7 +84,7 @@
       <a
         href={link.href}
         class="text-xl tracking-[0.2em] uppercase font-bold text-white hover:text-neon-cyan transition-colors"
-        on:click={() => (isMenuOpen = false)}
+        onclick={() => (isMenuOpen = false)}
       >
         {link.label}
       </a>
